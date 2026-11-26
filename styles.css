@@ -74,14 +74,14 @@ nav ul a.navcv{color:var(--accent);font-weight:600}
 .panel[hidden]{display:none}
 .sphere{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,72px);background:var(--forest);color:#fff;padding:clamp(28px,4vw,52px)!important;border:0!important;margin:8px 0}
 .sphere h2{color:#fff}.sphere p{color:rgba(255,255,255,.86)}.sphere .role{color:var(--mint);font-weight:600;font-size:15px;margin:0 0 10px}
-.sph-side{display:grid;gap:8px;align-content:center}
-.sph-art{width:min(260px,70%);margin:0 auto 4px;display:block}
+.sph-side{display:grid;align-content:center;justify-items:center}
+.sph-art{width:min(300px,90%);display:block}
 .sph-link{color:var(--mint);font-weight:600;text-decoration:underline;text-underline-offset:5px}
-.sph-figs{margin:0;display:grid;gap:0;align-content:center}
+.sph-figs{grid-column:1/-1;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 clamp(20px,3vw,40px)}
 .sph-figs div{border-top:1px solid rgba(255,255,255,.22);padding:14px 0}
 .sph-figs dt{font-family:Gloock,Georgia,serif;font-size:clamp(32px,3.4vw,46px);line-height:1}
 .sph-figs dd{margin:6px 0 0;color:rgba(255,255,255,.8);font-size:15px}
-@media (max-width:900px){.sphere{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:900px){.sphere{grid-template-columns:minmax(0,1fr)}.sph-figs{grid-template-columns:minmax(0,1fr)}.sph-art{width:min(220px,70%)}}
 section.band{padding:clamp(52px,7vw,104px) 0}
 .sechead{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:8px}
 .caselist{border-top:1px solid var(--ink);margin-top:28px}
