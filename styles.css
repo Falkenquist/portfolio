@@ -14,7 +14,7 @@ h3{font-family:"Instrument Sans",system-ui,sans-serif;letter-spacing:-.01em}
 h2{font-size:clamp(30px,3.8vw,46px)}
 h3{font-size:clamp(21px,2vw,25px);font-weight:600}
 p{margin:0 0 1em;max-width:64ch}
-nav{border-bottom:1px solid var(--line);background:var(--bg)}
+nav{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20;backdrop-filter:none}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
 nav .me{font-size:21px;text-decoration:none}
 nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex-wrap:wrap}
@@ -72,6 +72,13 @@ nav ul a.navcv{color:var(--accent);font-weight:600}
 .panel li{padding:8px 0 8px 20px;border-top:1px solid var(--line);position:relative}
 .panel li::before{content:"";position:absolute;left:0;top:1.2em;width:8px;height:2px;background:var(--accent)}
 .panel[hidden]{display:none}
+.sphere{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,72px);background:var(--forest);color:#fff;padding:clamp(28px,4vw,52px)!important;border:0!important;margin:8px 0}
+.sphere h2{color:#fff}.sphere p{color:rgba(255,255,255,.86)}.sphere .role{color:var(--mint);font-weight:600;font-size:15px;margin:0 0 10px}
+.sph-figs{margin:0;display:grid;gap:0;align-content:center}
+.sph-figs div{border-top:1px solid rgba(255,255,255,.22);padding:14px 0}
+.sph-figs dt{font-family:Gloock,Georgia,serif;font-size:clamp(32px,3.4vw,46px);line-height:1}
+.sph-figs dd{margin:6px 0 0;color:rgba(255,255,255,.8);font-size:15px}
+@media (max-width:900px){.sphere{grid-template-columns:minmax(0,1fr)}}
 section.band{padding:clamp(52px,7vw,104px) 0}
 .sechead{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;margin-bottom:8px}
 .caselist{border-top:1px solid var(--ink);margin-top:28px}
